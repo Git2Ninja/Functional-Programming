@@ -11,6 +11,7 @@ public class DequeExample {
         fruits.push("Apple");
         fruits.push("Banana");
         fruits.push("Mango");
+        fruits.push("Pinapple");
 
         System.out.println("Current Deque (as Stack): " + fruits);
 
