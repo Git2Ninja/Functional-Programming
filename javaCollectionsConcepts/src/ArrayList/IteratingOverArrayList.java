@@ -24,6 +24,15 @@ public class IteratingOverArrayList {
 		for(String language: programmingLanguages) {
 			System.out.println(language);
 		}
+		
+		ArrayList<String> objects = new ArrayList<>();
+		objects.add("Jam");
+		for(String object : objects) {
+			
+			System.out.println(object);
+			
+		}
+		
 		System.out.println("Iterator");
 		Iterator<String> iterator = programmingLanguages.iterator();
 		while(iterator.hasNext()) {

@@ -8,18 +8,30 @@ public class CreateHashSetFromAnotherCollection {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		HashSet<String> fruits = new HashSet<>();
+		
 		fruits.add("Apple");
 		fruits.add("Banana");
+		fruits.add("Berry");
 		fruits.add("Cherry");
+		fruits.add("Chickpea");
 		fruits.add("Apple");
+		fruits.add("Cocoa");
+		fruits.add("Pinapple");
 		
-		System.out.println("Fruits in Hashset,printed as is" + fruits.toString());
+		System.out.println(fruits.contains("Litchi"));
+		
+		
+		System.out.println("Fruits in Hashset,printed as is :\n" + fruits.toString());
+		
 		
 		ArrayList<String> array = new ArrayList<>(fruits);
+	
 		
 		System.out.println(fruits.contains("Aiiile"));
 		
 		System.out.println(array.get(1));
+		
+		System.out.println("Array"+array);
 		
 				
 	}

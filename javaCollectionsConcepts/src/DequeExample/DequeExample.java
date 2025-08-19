@@ -7,7 +7,7 @@ public class DequeExample {
     public static void main(String[] args) {
         Deque<String> fruits = new ArrayDeque<>();
 
-        // Pushing items onto the "stack" (LIFO behavior)
+        // Pushing items onto the "stack" (LIFO behavior),"stackability"
         fruits.push("Apple");
         fruits.push("Banana");
         fruits.push("Mango");
