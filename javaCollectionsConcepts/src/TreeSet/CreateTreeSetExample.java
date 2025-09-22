@@ -1,5 +1,6 @@
 package TreeSet;
 
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class CreateTreeSetExample {
@@ -22,6 +23,13 @@ public class CreateTreeSetExample {
         for (String fruit : fruits) {
             System.out.println(fruit);
         }
+        System.out.println("Iterating over TreeSet: Using Iterator");
+        Iterator<String> iterator = fruits.iterator();
+        while(iterator.hasNext()) {
+        	System.out.println(iterator.next());
+        }
+        System.out.println("Iterating over TreeSet: Using Lambda expression");
+        fruits.iterator().forEachRemaining((fruit) -> System.out.println(fruit));
 
         // Checking for existence
         if (fruits.contains("Mango")) {

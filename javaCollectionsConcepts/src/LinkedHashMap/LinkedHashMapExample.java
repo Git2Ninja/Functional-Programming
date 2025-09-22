@@ -33,7 +33,7 @@ public class LinkedHashMapExample {
         
         // Display the LinkedHashMap (this will show elements ordered by access)
         System.out.println("\nLinkedHashMap (Access Order after accessing keys):");
-        accessOrderMap.get(2); // Access the key '2'
+        accessOrderMap.get(1); // Access the key '2'
         accessOrderMap.get(4); // Access the key '4'
         
         // The order should now reflect the most recently accessed keys
