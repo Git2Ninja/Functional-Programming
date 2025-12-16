@@ -8,7 +8,7 @@ public class FunctionDemo {
 		// TODO Auto-generated method stub
 		//Traditional Way:
 		
-		//We use anonymous class
+//		//We use anonymous class
 		Function<String,String> function = new Function<String,String>(){
 			@Override
 			public String apply(String s) {
@@ -24,5 +24,4 @@ public class FunctionDemo {
 			System.out.println(functional1.apply(result));
 		
 	}
-
 }
