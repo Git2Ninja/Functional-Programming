@@ -40,16 +40,15 @@ import java.util.stream.Stream;
 					new Product1("Laptop","Electronics"),
 					new Product1("Shirt","Clothing"),
 					new Product1("Phone","Electronics"),
-					new Product1("Jean","Electronics")
+					new Product1("Jean","Clothing")
 					);
 			Map<String,List<Product1>>	productByCategory = products.stream()
 					.collect(Collectors.groupingBy(Product1::getCategory));
 			//Use foreach to read through the tream
 			
 			productByCategory.forEach((category, productList) -> {
-				System.out.println("Category"+category);
-				productList.forEach(product -> System.out.println(" -"+product.getName())
-						);					
+				System.out.println("Category "+category);
+				productList.forEach(product -> System.out.println(" -"+product.getName()));					
 			});
 	}
 	
